@@ -3462,10 +3462,12 @@ int32_t QCamera2HardwareInterface::processHDRData(cam_asd_hdr_scene_data_t hdr_s
         }
     }
 
+#ifndef DISABLE_DEBUG_LOG
     ALOGE("%s : hdr_scene_data: processHDRData: %d %f",
           __func__,
           hdr_scene.is_hdr_scene,
           hdr_scene.hdr_confidence);
+#endif
 
   return rc;
 }
