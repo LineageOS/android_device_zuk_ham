@@ -648,7 +648,7 @@ QCameraParameters::QCameraParameters()
       m_bAVTimerEnabled(false),
       m_bMobiEnabled(false),
       m_AdjustFPS(NULL),
-      m_bHDR1xFrameEnabled(true),
+      m_bHDR1xFrameEnabled(false),
       m_HDRSceneEnabled(false),
       m_bHDRThumbnailProcessNeeded(false),
       m_bHDR1xExtraBufferNeeded(true),
@@ -2907,12 +2907,7 @@ int32_t QCameraParameters::setSceneMode(const QCameraParameters& params)
                 // set if hdr 1x image is needed
                 const char *need_hdr_1x = params.get(KEY_QC_HDR_NEED_1X);
                 if (need_hdr_1x != NULL) {
-                    if (strcmp(need_hdr_1x, VALUE_TRUE) == 0) {
-                        m_bHDR1xFrameEnabled = true;
-                    } else {
-                        m_bHDR1xFrameEnabled = false;
-                    }
-
+                    m_bHDR1xFrameEnabled = false;
                     updateParamEntry(KEY_QC_HDR_NEED_1X, need_hdr_1x);
                 }
 
@@ -4247,7 +4242,6 @@ int32_t QCameraParameters::initDefaultParameters()
     set(KEY_QC_SUPPORTED_SCENE_DETECT, onOffValues);
     setSceneDetect(VALUE_OFF);
     m_bHDREnabled = false;
-    m_bHDR1xFrameEnabled = true;
 
     m_bHDRThumbnailProcessNeeded = false;
     m_bHDR1xExtraBufferNeeded = true;
