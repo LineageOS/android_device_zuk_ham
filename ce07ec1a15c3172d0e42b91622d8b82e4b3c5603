@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff5d4b2f_ea6ba71c",
+        "filename": "ham.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 68
+      },
+      "writtenOn": "2015-11-17T02:00:50Z",
+      "side": 1,
+      "message": "This is a no-op, this triggers hvdcp, but the device does not ship with it.",
+      "revId": "ce07ec1a15c3172d0e42b91622d8b82e4b3c5603",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
