@@ -261,6 +261,9 @@ on post-fs-data
     chmod 700 /data/misc/radio/qcril.db
 
 on fs
+    wait /dev/block/platform/${ro.boot.bootdevice}
+    symlink /dev/block/platform/${ro.boot.bootdevice} /dev/block/bootdevice
+
     mount_all ./fstab.qcom
     mkdir /dev/usb-ffs 0770 shell shell
     mkdir /dev/usb-ffs/adb 0770 shell shell
