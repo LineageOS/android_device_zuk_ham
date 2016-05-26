@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_cbb5f2ce",
+        "filename": "rootdir/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 68
+      },
+      "writtenOn": "2016-05-26T08:42:34Z",
+      "side": 1,
+      "message": "This is a bit confusing. Can you instead keep init.recovery.qcom.rc and have it import the power configuration?",
+      "revId": "7d15d166fac576a64e5c4632e4d581aefca259f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
