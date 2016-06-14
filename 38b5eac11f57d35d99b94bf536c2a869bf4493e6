@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_9385c85c",
+        "filename": "configs/media_profiles.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-06-14T19:21:32Z",
+      "side": 0,
+      "message": "Lots of unnecessary changes.",
+      "revId": "38b5eac11f57d35d99b94bf536c2a869bf4493e6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
