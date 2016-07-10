@@ -152,6 +152,9 @@ vendor/lib/libuiblur.so
 etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
 
+# HVDCP (QuickCharge-2.0)
+bin/hvdcp:vendor/bin/hvdcp
+
 # Media
 vendor/lib/libHevcSwDecoder.so
 vendor/lib/libOmxAacDec.so
