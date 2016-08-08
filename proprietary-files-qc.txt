@@ -72,6 +72,7 @@ vendor/lib/librs_adreno.so|483b327e1a7fde0a898019d5958e43097fd87f98
 vendor/lib/librs_adreno_sha1.so|e254ee7df74b1f0ecd73fc6b02e5bd5367a83de6
 vendor/lib/libsc-a3xx.so|231201bcfead5f930537d2fba22d89b00e673386
 vendor/lib/libscale.so|b44f44c633fa404d10e76aaa23593b516e08e2b8
+vendor/lib/libuiblur.so
 
 # Graphics firmware
 etc/firmware/a330_pfp.fw
