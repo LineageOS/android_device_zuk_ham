@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_1b698624",
+        "filename": "rootdir/etc/fstab.qcom",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 13956
+      },
+      "writtenOn": "2016-08-18T15:40:27Z",
+      "side": 1,
+      "message": "we might probably remove the above line or add back the \u0027*\u0027",
+      "revId": "4f81cc978d5f9dfcd075d3edb94e5e0902c33f66",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
