@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+# ConfigPanel
+PRODUCT_PACKAGES += \
+    ConfigPanel
+
 # Filesystem
 PRODUCT_PACKAGES += \
     make_ext4fs \
