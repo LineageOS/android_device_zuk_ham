@@ -169,6 +169,10 @@ on boot
     chown root system /sys/devices/virtual/touch/tp_dev/key_enable
     chmod 0660 /sys/devices/virtual/touch/tp_dev/key_enable
 
+    # Key Reverse
+    chown root system /sys/devices/virtual/touch/tp_dev/key_reverse
+    chmod 0660 /sys/devices/virtual/touch/tp_dev/key_reverse
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
