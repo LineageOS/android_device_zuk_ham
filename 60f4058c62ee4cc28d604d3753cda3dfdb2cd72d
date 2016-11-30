@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_cc12fcb1",
+        "filename": "system.prop",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 15450
+      },
+      "writtenOn": "2016-11-30T14:09:14Z",
+      "side": 0,
+      "message": "Im not sure about removing this # gps lines. We also didn\u0027t do that on other devices with the 8974 soc.",
+      "revId": "60f4058c62ee4cc28d604d3753cda3dfdb2cd72d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
