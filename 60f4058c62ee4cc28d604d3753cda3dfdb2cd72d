@@ -16,6 +16,24 @@
       "revId": "60f4058c62ee4cc28d604d3753cda3dfdb2cd72d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f681702_4ffa5e42",
+        "filename": "system.prop",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2016-12-01T02:10:12Z",
+      "side": 0,
+      "message": "This prop doesn\u0027t even seem to be used anymore.",
+      "parentUuid": "5f681702_cc12fcb1",
+      "revId": "60f4058c62ee4cc28d604d3753cda3dfdb2cd72d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
