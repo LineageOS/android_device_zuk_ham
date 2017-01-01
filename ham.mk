@@ -249,7 +249,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     persist.data.tcpackprio.enable=true \
     ro.data.large_tcp_window_size=true \
-    telephony.lteOnCdmaDevice=1 \
     wifi.interface=wlan0 \
     ro.qualcomm.perf.cores_online=2 \
     ro.vendor.extension_library=libqti-perfd-client.so \
