@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da3975d1_1714dcf3",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1690
+      },
+      "writtenOn": "2017-01-13T10:07:20Z",
+      "side": 1,
+      "message": "I assumed you also wanted this one changed but if not just let me know",
+      "range": {
+        "startLine": 57,
+        "startChar": 34,
+        "endLine": 57,
+        "endChar": 56
+      },
+      "revId": "a795d524f7b61ff443e1f13ac69c88f0de7a1816",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
