@@ -37,20 +37,12 @@ etc/firmware/venus.mdt
 
 # DRM
 bin/qseecomd
-etc/permissions/com.google.widevine.software.drm.xml
-framework/com.google.widevine.software.drm.jar
-vendor/lib/libQSEEComAPI.so
 lib/libdrmdecrypt.so
-vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
+vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
-vendor/lib/libwvdrm_L3.so
-vendor/lib/libwvm.so
-vendor/lib/libWVStreamControlAPI_L3.so
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
 
 # GPS
 lib/libloc_ds_api.so
@@ -169,6 +161,13 @@ bin/time_daemon
 vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 -app/TimeService/TimeService.apk
+
+# Widevine (from bullhead)
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/libwvdrm_L1.so
+vendor/lib/libwvm.so
+vendor/lib/libWVStreamControlAPI_L1.so
+vendor/lib/mediadrm/libwvdrmengine.so
 
 # WiFi
 -lib/libwpa_qmi_eap_proxy.so
