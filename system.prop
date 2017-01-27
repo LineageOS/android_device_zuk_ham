@@ -11,6 +11,9 @@ persist.radio.custom_ecc=1
 # enable multisim
 persist.radio.multisim.config=dsds
 
+# sdcardFS
+ro.sys.sdcardfs=true
+
 # sensors
 ro.qc.sdk.camera.facialproc=true
 ro.qc.sdk.gestures.camera=false
