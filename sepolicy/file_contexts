@@ -4,10 +4,6 @@
 # Vibrator
 /sys/devices/virtual/timed_output/vibrator/vtg_level   u:object_r:vibeamp_sysfs:s0
 
-# MAC Addresses
-/persist/.genmac                                u:object_r:wifi_data_file:s0
-/persist/.bt_nv.bin                             u:object_r:bluetooth_data_file:s0
-
 # Sensors
 /persist/sns.reg                                u:object_r:sensors_persist_file:s0
 
