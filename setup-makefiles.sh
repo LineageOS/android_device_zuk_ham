@@ -50,6 +50,9 @@ printf '\n%s\n' "ifeq (\$(QCPATH),)" >> "$ANDROIDMK"
 
 write_makefiles "$MY_DIR"/proprietary-files-qc.txt
 
+# Widevine Blobs
+printf '\n%s\n' "\$(call inherit-product, vendor/qcom/binaries/widevine/widevine-vendor.mk)" >> "$PRODUCTMK"
+
 printf '%s\n' "endif" >> "$PRODUCTMK"
 printf '%s\n' "endif" >> "$ANDROIDMK"
 
