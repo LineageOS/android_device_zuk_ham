@@ -52,8 +52,8 @@ BOARD_KERNEL_CMDLINE := console=tty60,115200,n8 androidboot.hardware=qcom user_d
 TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8974
 TARGET_KERNEL_CONFIG := lineageos_k9_defconfig
 
-# Enable DIAG on debug builds
-ifneq ($(TARGET_BUILD_VARIANT),user)
+# Enable DIAG on eng builds
+ifeq ($(TARGET_BUILD_VARIANT),eng)
 TARGET_KERNEL_ADDITIONAL_CONFIG:= lineageos_debug_config
 endif
 
