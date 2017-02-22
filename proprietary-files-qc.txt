@@ -54,12 +54,12 @@ vendor/lib/mediadrm/libwvdrmengine.so
 
 # GPS
 lib/libloc_ds_api.so
-lib/libloc_api_v02.so
+lib/libloc_api_v02.so|76f0f1224b2afc37215fb8732fc4835f72dc3cbb
 vendor/lib/hw/flp.default.so
 vendor/lib/libflp.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
+vendor/lib/liblbs_core.so|d8dde55d0dced1b37c949e122e9a722b02220c72
 
 # Graphics
 vendor/lib/egl/eglsubAndroid.so
