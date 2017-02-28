@@ -171,6 +171,7 @@ TARGET_RIL_VARIANT := caf
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_ham
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Use HW crypto for ODE

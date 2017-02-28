@@ -168,6 +168,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.msm8974
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_ham
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
