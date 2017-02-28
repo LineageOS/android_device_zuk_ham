@@ -20,6 +20,9 @@ DEVICE_PATH := device/zuk/ham
 # TODO: shouldn't be here
 BOARD_VENDOR := zuk
 
+# Assertions
+TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
+
 #Include path
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
