@@ -172,6 +172,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.media.treble_omx=false
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl
