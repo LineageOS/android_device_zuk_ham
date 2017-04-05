@@ -19,6 +19,9 @@
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay vendor/extra/overlays/phone-1080p
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage 
 
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
