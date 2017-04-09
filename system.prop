@@ -1,23 +1,83 @@
 #
 # system.prop for ham
 #
+# ADB
+ro.secure=0
+ro.adb.secure=0
 
-ro.sf.lcd_density=480
+# CABL
+ro.qualcomm.cabl=0
+
+# Camera
+camera2.portability.force_api=1
+persist.camera.4k2k.enable=1
+
+# Display
+ro.sf.lcd_density=400
+persist.hwc.mdpcomp.enable=true
+ro.opengles.version=196608
+
+# Bluetooth
+bluetooth.hfp.client=1
+qcom.bluetooth.soc=smd
+ro.bluetooth.hfp.ver=1.7
+ro.qualcomm.bt.hci_transport=smd
+
+ro.bluetooth.dun=false
+ro.bluetooth.sap=false
+ro.qualcomm.bluetooth.ftp=true
+ro.qualcomm.bluetooth.hfp=true
+ro.qualcomm.bluetooth.hsp=true
+ro.qualcomm.bluetooth.map=true
+ro.qualcomm.bluetooth.nap=true
+ro.qualcomm.bluetooth.opp=true
+ro.qualcomm.bluetooth.pbap=true
+
+# GPS
+persist.gps.qc_nlp_in_use=0
+ro.gps.agps_provider=1
+ro.pip.gated=0
+
+# Media
+audio_hal.period_size=192
+audio.offload.buffer.size.kb=32
+audio.offload.video=true
+audio.offload.multiple.enabled=false
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+audio.deep_buffer.media=true
+audio.deep_buffer.media=true
+mm.enable.smoothstreaming=true
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+media.aac_51_output_enabled=true
+av.streaming.offload.enable=false
+use.dedicated.device.for.voip=true
+
+# Network
+persist.data.netmgrd.qos.enable=true
+persist.data.tcpackprio.enable=true
+ro.data.large_tcp_window_size=true
+
+# Perf
+ro.qualcomm.perf.cores_online=2
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# Radio
 rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 persist.radio.add_power_save=1
 persist.radio.apm_sim_not_pwdn=1
+ro.telephony.call_ring.multiple=0
+ro.telephony.default_network=10
+persist.radio.flexmap_type=dds
+ro.use_data_netmgrd=true
+telephony.lteOnCdmaDevice=1
+ro.config.vc_call_vol_steps=6
+ro.ril.em_redial_vt_failover=true
 persist.radio.custom_ecc=1
-
-# enable multisim
 persist.radio.multisim.config=dsds
 
-# bluetooth
-qcom.bluetooth.soc=smd
-
-# sdcardFS
-ro.sys.sdcardfs=true
-
-# sensors
+# Sensors
 ro.qc.sdk.camera.facialproc=true
 ro.qc.sdk.gestures.camera=false
 ro.qti.sdk.sensors.gestures=true
@@ -28,11 +88,19 @@ ro.qti.sensors.pick_up=false
 ro.qti.sensors.tilt_detector=true
 ro.qti.sensors.scrn_ortn=true
 
-# cabl is handled by the panel
-ro.qualcomm.cabl=0
+# Time services
+persist.timed.enable=true
 
-# handle tear down on em redial
-ro.ril.em_redial_vt_failover=true
+# Wifi
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
 
 # Factory reset protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Assertive display
+ro.qcom.ad=1
+ro.qcom.ad.calib.data=system/etc/ad_calib.cfg
+
+# Sdcardfs
+ro.sys.sdcardfs=true
