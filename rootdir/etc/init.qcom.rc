@@ -16,6 +16,9 @@ import /init.qcom.usb.rc
 import /init.qcom.power.rc
 
 on early-init
+    mount debugfs debugfs /sys/kernel/debug
+    chmod 0755 /sys/kernel/debug
+
     chown system system /sys/kernel/debug/kgsl/proc
 
 on init
@@ -64,6 +67,8 @@ on boot
     mkdir /dev/socket/qmux_gps 0770 gps gps
     chmod 2770 /dev/socket/qmux_gps
 
+    mkdir /persist/bluetooth 0770 bluetooth bluetooth
+	
     # For setting tcp delayed ack
     chown system system /sys/kernel/ipv4/tcp_delack_seg
     chown system system /sys/kernel/ipv4/tcp_use_userconfig
@@ -274,7 +279,7 @@ on fs
     mkdir /persist/data/sfs 0700 system system
     mkdir /persist/data/tz 0700 system system
 
-    mount ext4 /dev/block/bootdevice/by-name/mrd /oem ro nosuid nodev context=u:object_r:oemfs:s0
+    mount ext4 /dev/block/bootdevice/by-name/mrd /oem ro nosuid nodev 
 
 service rmt_storage /system/bin/rmt_storage
     class core
@@ -389,12 +394,6 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
-service mpdecision /system/bin/mpdecision --avg_comp
-   class main
-   user root
-   group system
-   disabled
-
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
    user root
@@ -409,19 +408,13 @@ service time_daemon /system/bin/time_daemon
    group root
 
 on property:vold.decrypt=trigger_restart_framework
-   start config_bluetooth
+   start config_bt_addr
    start wcnss-service
 
 service config_bt_addr /system/bin/btnvtool -O
     class core
     user bluetooth
     group bluetooth radio
-    oneshot
-
-service config_bluetooth /system/bin/sh /system/etc/init.qcom.bt.sh "onboot"
-    class core
-    user root
-    group bluetooth net_bt_admin qcom_diag radio
     oneshot
 
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh

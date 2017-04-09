@@ -27,11 +27,11 @@
 
 #filename				device
 
-NON-HLOS.bin			/dev/block/bootdevice/by-name/modem
-sbl1.mbn				/dev/block/bootdevice/by-name/sbl1
-tz.mbn					/dev/block/bootdevice/by-name/tz
-rpm.mbn					/dev/block/bootdevice/by-name/rpm
-emmc_appsboot.mbn	    /dev/block/bootdevice/by-name/aboot
-splash.img				/dev/block/bootdevice/by-name/splash
-persist.img             /dev/block/bootdevice/by-name/persist
-sdi.mbn					/dev/block/bootdevice/by-name/dbi
+NON-HLOS.bin          /dev/block/bootdevice/by-name/modem
+sbl1.mbn              /dev/block/bootdevice/by-name/sbl1
+tz.mbn                /dev/block/bootdevice/by-name/tz
+rpm.mbn               /dev/block/bootdevice/by-name/rpm
+emmc_appsboot.mbn     /dev/block/bootdevice/by-name/aboot
+splash.img            /dev/block/bootdevice/by-name/splash
+persist.mbn           /dev/block/bootdevice/by-name/persist
+sdi.mbn               /dev/block/bootdevice/by-name/dbi
