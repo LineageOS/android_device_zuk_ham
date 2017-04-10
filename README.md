@@ -15,4 +15,4 @@ Display | 1920x1080 pixels, 5.5 inches (~401 ppi pixel density)
 Camera  | Primary: 13 MP, f/2.2, autofocus, OIS, dual-LED flash
 Camera	| Secondary: 8 MP, f/2.2, 1080p@30fps
 
-![Lenovo ZUK Z1](http://cdn2.gsmarena.com/vv/pics/lenovo/lenovo-zuk-z1-1.jpg "Lenovo ZUK Z1")
+![xTREMEsPEED](http://i.imgur.com/0kmjX0A.jpg "xTREMEsPEED")
