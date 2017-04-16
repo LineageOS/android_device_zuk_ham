@@ -4,6 +4,7 @@
 # ADB
 ro.secure=0
 ro.adb.secure=0
+persist.service.adb.enable=1
 
 # CABL
 ro.qualcomm.cabl=0
