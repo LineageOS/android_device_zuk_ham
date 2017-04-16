@@ -53,7 +53,7 @@ TARGET_KERNEL_CONFIG               := radioactive_defconfig
 
 # Enable DIAG on debug builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
-TARGET_KERNEL_ADDITIONAL_CONFIG:= cyanogenmod_debug_config
+TARGET_KERNEL_ADDITIONAL_CONFIG:=  lineage_debug_config
 endif
 
 # Audio
@@ -168,6 +168,9 @@ BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
 
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true
+
+# Add fix for common JACK issues
+ANDROID_JACK_VM_ARGS := -Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4096m
 
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
