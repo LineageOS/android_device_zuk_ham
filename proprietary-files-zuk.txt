@@ -94,4 +94,4 @@ etc/tfa98xx/shenqi_music.eq
 etc/tfa98xx/shenqi_music.preset
 etc/tfa98xx/shenqi_speech.eq
 etc/tfa98xx/shenqi_speech.preset
-vendor/lib/libtfa98xx.sos
+vendor/lib/libtfa98xx.so
