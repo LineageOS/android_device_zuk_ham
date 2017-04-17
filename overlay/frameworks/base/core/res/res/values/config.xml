@@ -262,4 +262,7 @@
         <item>SUPL_MODE=1</item>
         <item>LPP_PROFILE=0</item>
     </string-array>
+
+    <!-- Whether notify fingerprint client of successful cancelled authentication -->
+    <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
 </resources>
