@@ -226,6 +226,9 @@ vendor/lib/hw/sensors.msm8974.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 
+# STLport
+vendor/lib/libstlport.so
+
 # TFA9890
 etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config
 etc/tfa98xx/TFA9890_N1C3_2_1_1.patch
