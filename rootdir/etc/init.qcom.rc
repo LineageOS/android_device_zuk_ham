@@ -277,7 +277,7 @@ service qmuxd /system/vendor/bin/qmuxd
 service netmgrd /system/vendor/bin/netmgrd
     class main
     user root
-    group root wifi wakelock radio inet oem_2950
+    group root wifi wakelock radio inet oem_2950 system
 
 # QCOM sensor
 service sensors /system/vendor/bin/sensors.qcom
