@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -172,7 +172,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
-    $(LOCAL_PATH)/keylayout/Goodix-CTP.kl:system/usr/keylayout/Goodix-CTP.kl
+    $(LOCAL_PATH)/keylayout/Goodix-CTP.kl:system/usr/keylayout/Goodix-CTP.kl \
+    $(LOCAL_PATH)/keylayout/fpc1020tp.kl:system/usr/keylayout/fpc1020tp.kl
 
 # Keystore
 PRODUCT_PACKAGES += \

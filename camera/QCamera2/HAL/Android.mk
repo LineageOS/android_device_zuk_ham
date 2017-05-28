@@ -7,8 +7,7 @@ LOCAL_CLANG_CFLAGS += \
         -Wno-error=strlcpy-strlcat-size \
         -Wno-error=gnu-designator \
         -Wno-error=unused-variable \
-        -Wno-error=format \
-        -Wno-error=sign-compare
+        -Wno-error=format
 
 LOCAL_SRC_FILES := \
         QCamera2Factory.cpp \
@@ -27,11 +26,6 @@ LOCAL_SRC_FILES := \
         wrapper/QualcommCamera.cpp
 
 LOCAL_CFLAGS = -Wall -Werror -DDEFAULT_DENOISE_MODE_ON
-
-ifeq ($(TARGET_USES_MEDIA_EXTENSIONS), true)
-LOCAL_CFLAGS += -DUSE_MEDIA_EXTENSIONS
-endif
-
 #Debug logs are enabled
 #LOCAL_CFLAGS += -DDISABLE_DEBUG_LOG
 
