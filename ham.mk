@@ -79,6 +79,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
      ro.config.vc_call_vol_steps=6 \
+     ro.config.media_vol_steps=25 \
      mm.enable.sec.smoothstreaming=true \
      audio.deep_buffer.media=true \
      audio.offload.video=true \
