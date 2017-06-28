@@ -384,7 +384,7 @@ service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
 service mpdecision /system/vendor/bin/mpdecision --avg_comp
    class main
    user root
-   group system
+   group root readproc
    disabled
 
 service thermal-engine /system/vendor/bin/thermal-engine
