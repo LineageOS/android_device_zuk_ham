@@ -283,7 +283,7 @@ on fs
 service rmt_storage /system/bin/rmt_storage
     class core
     user root
-    group system
+    group system wakelock
 
 service rfs_access /system/bin/rfs_access
    class core
