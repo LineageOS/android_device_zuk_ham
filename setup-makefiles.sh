@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
+#           (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -40,18 +41,8 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 # Copyright headers and guards
 write_headers
 
-# The standard blobs
-write_makefiles "$MY_DIR"/proprietary-files-zuk.txt
-
-# Qualcomm BSP blobs - we put a conditional around here
-# in case the BSP is actually being built
-printf '\n%s\n' "ifeq (\$(QCPATH),)" >> "$PRODUCTMK"
-printf '\n%s\n' "ifeq (\$(QCPATH),)" >> "$ANDROIDMK"
-
-write_makefiles "$MY_DIR"/proprietary-files-qc.txt
-
-printf '%s\n' "endif" >> "$PRODUCTMK"
-printf '%s\n' "endif" >> "$ANDROIDMK"
+# Rules to copy blobs
+write_makefiles "$MY_DIR"/proprietary-files.txt
 
 # We are done!
 write_footers
