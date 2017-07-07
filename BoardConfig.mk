@@ -195,11 +195,6 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
-# inherit from the proprietary version
-ifneq ($(QCPATH),)
--include $(QCPATH)/common/msm8974/BoardConfigVendor.mk
-endif
-
 # SELinux policies
 # qcom sepolicy
 include device/qcom/sepolicy/sepolicy.mk
