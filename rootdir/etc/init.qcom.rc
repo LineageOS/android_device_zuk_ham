@@ -263,6 +263,7 @@ service rmt_storage /system/vendor/bin/rmt_storage
     class core
     user root
     group system wakelock
+    shutdown critical
 
 service rfs_access /system/vendor/bin/rfs_access
     class core
