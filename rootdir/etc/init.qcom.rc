@@ -470,13 +470,11 @@ on property:persist.sys.qlogd=1
 on property:persist.sys.qlogd=0
     stop qlogd
 
-service ril-daemon1 /system/bin/rild -c 2
+service ril-daemon1 /system/vendor/bin/hw/rild -c 2
     class main
-    socket rild2 stream 660 root radio
-    socket rild-debug2 stream 660 radio system
-    user root
-    group radio cache inet misc audio sdcard_r sdcard_rw diag qcom_diag log
-    group radio cache inet misc audio sdcard_r sdcard_rw diag qcom_diag log
+    user radio
+    group radio cache inet misc audio log readproc wakelock sdcard_r sdcard_rw diag qcom_diag
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service fuse_sdcard1 /system/vendor/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/sdcard1 /storage/sdcard1
     class late_start
