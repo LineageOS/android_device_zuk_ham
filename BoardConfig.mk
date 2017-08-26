@@ -78,6 +78,7 @@ USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bionic
 TARGET_LD_SHIM_LIBS := \
+    /system/vendor/bin/mpdecision|libshims_atomic.so \
     /system/vendor/bin/thermal-engine|libshims_thermal.so
 
 # Bluetooth
