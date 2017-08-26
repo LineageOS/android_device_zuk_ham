@@ -76,6 +76,10 @@ AUDIO_FEATURE_ENABLED_LOW_LATENCY_CAPTURE := true
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 USE_XML_AUDIO_POLICY_CONF := 1
 
+# Bionic
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/bin/mpdecision|libshims_atomic.so
+
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
