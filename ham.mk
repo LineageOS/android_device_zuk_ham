@@ -187,6 +187,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service-qti
 
+# Perf
+PRODUCT_PACKAGES += \
+    libshims_atomic
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_ham
