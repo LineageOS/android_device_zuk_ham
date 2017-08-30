@@ -55,7 +55,7 @@ on init
     chmod 660 /sys/class/leds/button-backlight2/brightness
 
 
-service light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.ham
+service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.ham
     class hal
     user system
     group system
