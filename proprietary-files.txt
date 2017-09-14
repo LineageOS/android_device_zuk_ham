@@ -263,5 +263,4 @@ etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # WiFi
--lib/libwpa_qmi_eap_proxy.so:vendor/lib/libwpa_qmi_eap_proxy.so
 lib/libwcnss_qmi.so:vendor/lib/libwcnss_qmi.so
