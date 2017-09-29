@@ -403,7 +403,7 @@ service config_bt_addr /system/vendor/bin/btnvtool -O
     group bluetooth radio
     oneshot
 
-service hciattach /system/vendor/bin/sh /system/etc/init.qcom.bt.sh
+service hciattach /system/vendor/bin/init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth net_bt_admin qcom_diag radio
