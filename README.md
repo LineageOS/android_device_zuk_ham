@@ -1,4 +1,6 @@
-Copyright 2017 - The LineageOS Project.
+Copyright (C) 2015-2016 The CyanogenMod Project
+
+Copyright (C) 2017-2018 The LineageOS Project
 
 Device Tree for Lenovo ZUK Z1 (ham)
 ===========================================
