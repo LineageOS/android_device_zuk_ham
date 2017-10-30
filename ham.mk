@@ -109,11 +109,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ConfigPanel
 
-# Filesystem
-PRODUCT_PACKAGES += \
-    make_ext4fs \
-    setup_fs
-
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.0-service
