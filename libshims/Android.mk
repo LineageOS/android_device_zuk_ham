@@ -22,5 +22,6 @@ LOCAL_SRC_FILES := atomic.cpp
 LOCAL_MODULE := libshims_atomic
 LOCAL_MODULE_TAGS := optional
 LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_VENDOR_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
