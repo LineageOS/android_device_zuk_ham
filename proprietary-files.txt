@@ -194,7 +194,6 @@ vendor/lib/libsystem_health_mon.so
 # Radio
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -app/shutdownlistener/shutdownlistener.apk:vendor/app/shutdownlistener/shutdownlistener.apk
-bin/diag_mdlog:vendor/bin/diag_mdlog
 bin/netmgrd:vendor/bin/netmgrd
 bin/qmuxd:vendor/bin/qmuxd
 bin/radish:vendor/bin/radish
