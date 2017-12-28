@@ -427,11 +427,6 @@ service adsprpcd /system/vendor/bin/adsprpcd
     user media
     group media
 
-service audiod /system/vendor/bin/audiod
-   class late_start
-   user system
-   group system
-
 service wcnss-service /system/vendor/bin/wcnss_service
     class main
     user system
