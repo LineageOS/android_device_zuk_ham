@@ -296,7 +296,7 @@ service rfs_access /system/vendor/bin/rfs_access
 service qmuxd /system/vendor/bin/qmuxd
     class main
     user radio
-    group radio audio bluetooth gps qcom_diag
+    group radio audio bluetooth gps oem_2950
 
 service netmgrd /system/vendor/bin/netmgrd
     class main
@@ -342,7 +342,7 @@ service wpa_supplicant /system/vendor/bin/hw/wpa_supplicant \
 service loc_launcher /system/vendor/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
-    group gps qcom_oncrpc inet net_raw qcom_diag net_admin wifi
+    group gps qcom_oncrpc inet net_raw oem_2950 net_admin wifi
 
 service qseecomd /system/vendor/bin/qseecomd
     class core
@@ -412,7 +412,7 @@ service config_bt_addr /system/vendor/bin/btnvtool -O
 service hciattach /system/vendor/bin/init.qcom.bt.sh
     class late_start
     user bluetooth
-    group bluetooth net_bt_admin qcom_diag radio
+    group bluetooth net_bt_admin oem_2950 radio
     disabled
     oneshot
 
@@ -435,7 +435,7 @@ service audiod /system/vendor/bin/audiod
 service wcnss-service /system/vendor/bin/wcnss_service
     class main
     user system
-    group system wifi qcom_diag radio
+    group system wifi oem_2950 radio
     oneshot
 
 service ppd /system/vendor/bin/mm-pp-daemon
@@ -455,14 +455,14 @@ on property:init.svc.surfaceflinger=running
 service diag_mdlog_start /system/vendor/bin/diag_mdlog
     class late_start
     user shell
-    group system qcom_diag sdcard_rw sdcard_r media_rw
+    group system oem_2950 sdcard_rw sdcard_r media_rw
     disabled
     oneshot
 
 service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
     class late_start
     user shell
-    group system qcom_diag sdcard_rw sdcard_r media_rw
+    group system oem_2950 sdcard_rw sdcard_r media_rw
     disabled
     oneshot
 
@@ -479,7 +479,7 @@ on property:persist.sys.qlogd=0
 service ril-daemon1 /system/vendor/bin/hw/rild -c 2
     class main
     user radio
-    group radio cache inet misc audio log readproc wakelock sdcard_r sdcard_rw diag qcom_diag
+    group radio cache inet misc audio log readproc wakelock sdcard_r sdcard_rw diag oem_2950
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service fuse_sdcard1 /system/vendor/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/sdcard1 /storage/sdcard1
