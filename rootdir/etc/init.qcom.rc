@@ -360,12 +360,6 @@ service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
-service mpdecision /system/vendor/bin/mpdecision --avg_comp
-    class main
-    user root
-    group root readproc
-    disabled
-
 service thermal-engine /system/vendor/bin/thermal-engine
     class main
     user root
