@@ -9,6 +9,7 @@ LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 
 LOCAL_SHARED_LIBRARIES := liblog libutils libcutils libdl
+LOCAL_CFLAGS := -Wall -Werror -Wno-unused-parameter
 
 LOCAL_SRC_FILES := audio_amplifier.c
 
