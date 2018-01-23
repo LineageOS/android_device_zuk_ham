@@ -1,3 +1,60 @@
+on init
+    # RGB
+    chown system system /sys/class/leds/led:rgb_red/brightness
+    chown system system /sys/class/leds/led:rgb_red/duty_pcts
+    chown system system /sys/class/leds/led:rgb_red/pause_lo
+    chown system system /sys/class/leds/led:rgb_red/pause_hi
+    chown system system /sys/class/leds/led:rgb_red/ramp_step_ms
+    chown system system /sys/class/leds/led:rgb_red/start_idx
+    chown system system /sys/class/leds/led:rgb_red/blink
+    chown system system /sys/class/leds/led:rgb_green/brightness
+    chown system system /sys/class/leds/led:rgb_green/duty_pcts
+    chown system system /sys/class/leds/led:rgb_green/pause_lo
+    chown system system /sys/class/leds/led:rgb_green/pause_hi
+    chown system system /sys/class/leds/led:rgb_green/ramp_step_ms
+    chown system system /sys/class/leds/led:rgb_green/start_idx
+    chown system system /sys/class/leds/led:rgb_green/blink
+    chown system system /sys/class/leds/led:rgb_blue/brightness
+    chown system system /sys/class/leds/led:rgb_blue/duty_pcts
+    chown system system /sys/class/leds/led:rgb_blue/pause_lo
+    chown system system /sys/class/leds/led:rgb_blue/pause_hi
+    chown system system /sys/class/leds/led:rgb_blue/ramp_step_ms
+    chown system system /sys/class/leds/led:rgb_blue/start_idx
+    chown system system /sys/class/leds/led:rgb_blue/blink
+
+    chown system system /sys/class/leds/rgb/rgb_blink
+
+    chown system system /sys/class/leds/button-backlight/brightness
+    chown system system /sys/class/leds/button-backlight2/brightness
+
+    chmod 660 /sys/class/leds/led:rgb_red/brightness
+    chmod 660 /sys/class/leds/led:rgb_red/duty_pcts
+    chmod 660 /sys/class/leds/led:rgb_red/pause_lo
+    chmod 660 /sys/class/leds/led:rgb_red/pause_hi
+    chmod 660 /sys/class/leds/led:rgb_red/ramp_step_ms
+    chmod 660 /sys/class/leds/led:rgb_red/start_idx
+    chmod 660 /sys/class/leds/led:rgb_red/blink
+    chmod 660 /sys/class/leds/led:rgb_green/brightness
+    chmod 660 /sys/class/leds/led:rgb_green/duty_pcts
+    chmod 660 /sys/class/leds/led:rgb_green/pause_lo
+    chmod 660 /sys/class/leds/led:rgb_green/pause_hi
+    chmod 660 /sys/class/leds/led:rgb_green/ramp_step_ms
+    chmod 660 /sys/class/leds/led:rgb_green/start_idx
+    chmod 660 /sys/class/leds/led:rgb_green/blink
+    chmod 660 /sys/class/leds/led:rgb_blue/brightness
+    chmod 660 /sys/class/leds/led:rgb_blue/duty_pcts
+    chmod 660 /sys/class/leds/led:rgb_blue/pause_lo
+    chmod 660 /sys/class/leds/led:rgb_blue/pause_hi
+    chmod 660 /sys/class/leds/led:rgb_blue/ramp_step_ms
+    chmod 660 /sys/class/leds/led:rgb_blue/start_idx
+    chmod 660 /sys/class/leds/led:rgb_blue/blink
+
+    chmod 660 /sys/class/leds/rgb/rgb_blink
+
+    chmod 660 /sys/class/leds/button-backlight/brightness
+    chmod 660 /sys/class/leds/button-backlight2/brightness
+
+
 service light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.ham
     class hal
     user system
