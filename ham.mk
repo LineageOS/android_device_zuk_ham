@@ -189,6 +189,11 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Healthd
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-impl \
+    android.hardware.health@1.0-service
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.1-service-qti
