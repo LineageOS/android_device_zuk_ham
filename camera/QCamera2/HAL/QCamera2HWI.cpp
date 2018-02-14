@@ -1089,8 +1089,6 @@ int QCamera2HardwareInterface::openCamera()
     int32_t l_curr_height = 0;
     m_max_pic_width = 0;
     m_max_pic_height = 0;
-    char value[PROPERTY_VALUE_MAX];
-    int enable_4k2k;
     int i;
 
     if (mCameraHandle) {
@@ -1128,51 +1126,6 @@ int QCamera2HardwareInterface::openCamera()
     copyList(savedSizes[mCameraId].all_video_sizes, gCamCapability[mCameraId]->video_sizes_tbl,
              savedSizes[mCameraId].all_video_sizes_cnt);
     gCamCapability[mCameraId]->video_sizes_tbl_cnt = savedSizes[mCameraId].all_video_sizes_cnt;
-
-    //check if video size 4k x 2k support is enabled
-    property_get("persist.camera.4k2k.enable", value, "0");
-    enable_4k2k = atoi(value) > 0 ? 1 : 0;
-    ALOGD("%s: enable_4k2k is %d", __func__, enable_4k2k);
-    if (!enable_4k2k) {
-       //if the 4kx2k size exists in the supported preview size or
-       //supported video size remove it
-       bool found;
-       cam_dimension_t true_size_4k_2k;
-       cam_dimension_t size_4k_2k;
-       true_size_4k_2k.width = 4096;
-       true_size_4k_2k.height = 2160;
-       size_4k_2k.width = 3840;
-       size_4k_2k.height = 2160;
-
-       found = removeSizeFromList(gCamCapability[mCameraId]->preview_sizes_tbl,
-                                  gCamCapability[mCameraId]->preview_sizes_tbl_cnt,
-                                  true_size_4k_2k);
-       if (found) {
-          gCamCapability[mCameraId]->preview_sizes_tbl_cnt--;
-       }
-
-       found = removeSizeFromList(gCamCapability[mCameraId]->preview_sizes_tbl,
-                                  gCamCapability[mCameraId]->preview_sizes_tbl_cnt,
-                                  size_4k_2k);
-       if (found) {
-          gCamCapability[mCameraId]->preview_sizes_tbl_cnt--;
-       }
-
-
-       found = removeSizeFromList(gCamCapability[mCameraId]->video_sizes_tbl,
-                                  gCamCapability[mCameraId]->video_sizes_tbl_cnt,
-                                  true_size_4k_2k);
-       if (found) {
-          gCamCapability[mCameraId]->video_sizes_tbl_cnt--;
-       }
-
-       found = removeSizeFromList(gCamCapability[mCameraId]->video_sizes_tbl,
-                                  gCamCapability[mCameraId]->video_sizes_tbl_cnt,
-                                  size_4k_2k);
-       if (found) {
-          gCamCapability[mCameraId]->video_sizes_tbl_cnt--;
-       }
-    }
 
     int32_t rc = m_postprocessor.init(jpegEvtHandle, this);
     if (rc != 0) {
