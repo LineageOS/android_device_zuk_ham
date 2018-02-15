@@ -146,8 +146,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_buffer_age=false \
     debug.sf.recomputecrop=0 \
-    debug.sf.disable_backpressure=1
-
+    debug.sf.disable_backpressure=1 \
+    debug.sf.latch_unsignaled=1
 
 # GPS
 PRODUCT_PACKAGES += \
