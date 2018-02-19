@@ -208,7 +208,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Extended filesystem support
-TARGET_EXFAT_DRIVER := exfat
+TARGET_EXFAT_DRIVER := sdfat
 
 # SELinux policies
 # qcom sepolicy
