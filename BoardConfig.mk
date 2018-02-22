@@ -207,6 +207,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Extended filesystem support
+TARGET_KERNEL_HAVE_EXFAT := true
+
 # SELinux policies
 # qcom sepolicy
 include device/qcom/sepolicy/sepolicy.mk
