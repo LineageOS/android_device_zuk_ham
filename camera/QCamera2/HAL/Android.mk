@@ -51,13 +51,8 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../../mm-image-codec/qexif \
         $(LOCAL_PATH)/../../mm-image-codec/qomx_core \
         $(LOCAL_PATH)/../util \
-        $(LOCAL_PATH)/wrapper
-
-ifeq ($(call is-platform-sdk-version-at-least,20),true)
-LOCAL_C_INCLUDES += system/media/camera/include
-else
-LOCAL_CFLAGS += -DUSE_KK_CODE
-endif
+        $(LOCAL_PATH)/wrapper \
+        system/media/camera/include
 
 ifeq ($(TARGET_USE_VENDOR_CAMERA_EXT),true)
 LOCAL_C_INCLUDES += $(call project-path-for,qcom-display)/msm8974/libgralloc
