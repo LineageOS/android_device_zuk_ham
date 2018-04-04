@@ -15,3 +15,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_ham.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_ham-user \
+    lineage_ham-userdebug \
+    lineage_ham-eng
