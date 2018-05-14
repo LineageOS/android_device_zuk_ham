@@ -74,8 +74,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libtfa98xx \
-    tinymix
+    libtfa98xx
 
 PRODUCT_PROPERTY_OVERRIDES += \
      ro.config.vc_call_vol_steps=7 \
