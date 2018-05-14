@@ -191,15 +191,6 @@ PROTOBUF_SUPPORTED := true
 # ANT+ - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
-ifeq ($(HOST_OS),linux)
-  ifeq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-    endif
-  endif
-endif
-
 # Extended filesystem support
 TARGET_EXFAT_DRIVER := sdfat
 
