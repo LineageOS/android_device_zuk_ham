@@ -120,7 +120,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.0-service
+    android.hardware.biometrics.fingerprint@2.0-service.ham
 
 # Graphics
 PRODUCT_PACKAGES += \
