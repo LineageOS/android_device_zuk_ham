@@ -25,7 +25,7 @@
 /dev/fpc1020                                                       u:object_r:fingerprint_device:s0
 
 # FRP
-/dev/block/bootdevice/by-name/frp               u:object_r:frp_block_device:s0
+/dev/block/platform/msm_sdcc.1/by-name/frp               u:object_r:frp_block_device:s0
 
 # TTY
 /dev/ttyGS2                                     u:object_r:tty_device:s0

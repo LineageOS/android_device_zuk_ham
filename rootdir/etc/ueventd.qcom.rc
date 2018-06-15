@@ -246,4 +246,4 @@
 /sys/devices/virtual/input/input* value 0660 system input
 
 # Factory reset protection
-/dev/block/bootdevice/by-name/frp 0600 system system
+/dev/block/platform/msm_sdcc.1/by-name/frp 0644 system system
