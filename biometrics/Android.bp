@@ -28,5 +28,5 @@ cc_binary {
         "libhwbinder",
         "android.hardware.biometrics.fingerprint@2.1",
     ],
-    proprietary: true,
+    vendor: true,
 }
