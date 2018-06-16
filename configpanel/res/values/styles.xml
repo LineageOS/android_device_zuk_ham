@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources>
-    <style name="Theme.Main" parent="@android:style/Theme.Material.Settings">
-        <item name="preferenceTheme">@android:style/Theme.Material.Settings</item>
+    <style name="Theme.Main" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="preferenceTheme">@android:style/Theme.DeviceDefault.Settings</item>
     </style>
 </resources>
