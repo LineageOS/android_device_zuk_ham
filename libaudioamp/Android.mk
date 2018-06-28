@@ -4,8 +4,9 @@ include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES += \
      $(call project-path-for,qcom-audio)/hal/msm8974/ \
-     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
-		 hardware/libhardware/include
+     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
+
+LOCAL_HEADER_LIBRARIES += libhardware_headers
 
 LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
