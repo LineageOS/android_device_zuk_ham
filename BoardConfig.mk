@@ -163,9 +163,6 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# No old RPC for prop
-TARGET_NO_RPC := true
-
 # GPS HAL lives here
 USE_DEVICE_SPECIFIC_GPS := true
 USE_DEVICE_SPECIFIC_LOC_API := true
