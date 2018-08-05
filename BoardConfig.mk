@@ -185,6 +185,7 @@ TARGET_RIL_VARIANT := caf
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+LZMA_RAMDISK_TARGETS := recovery
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_ham
