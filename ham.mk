@@ -345,8 +345,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2016-06-01
 
-# call dalvik heap config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
-
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/zuk/ham/ham-vendor.mk)
