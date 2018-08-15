@@ -151,10 +151,12 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
+on post-fs
+    # Allow writing to the kernel trace log.
+    chmod 0222 /sys/kernel/debug/tracing/trace_marker
+
 # msm specific files that need to be created on /data
 on post-fs-data
-    chmod 0755 /sys/kernel/debug/tracing
-
     mkdir /data/media 0770 media_rw media_rw
 
     # Create directory for TZ Apps
