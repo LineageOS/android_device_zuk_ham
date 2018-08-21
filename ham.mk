@@ -80,22 +80,22 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_PROPERTY_OVERRIDES += \
-     use.dedicated.device.for.voip=true \
      ro.config.vc_call_vol_steps=6 \
-     audio_hal.period_size=192 \
      mm.enable.smoothstreaming=true \
-     ro.qc.sdk.audio.fluencetype=fluence \
-     persist.audio.fluence.voicecall=true \
-     audio.offload.buffer.size.kb=32 \
      audio.deep_buffer.media=true \
      audio.offload.video=true \
      av.streaming.offload.enable=true \
-     audio.offload.multiple.enabled=false \
-     audio.offload.gapless.enabled=true \
-     tunnel.audio.encode=true \
      media.aac_51_output_enabled=true \
      audio.offload.pcm.16bit.enable=true \
-     audio.offload.pcm.24bit.enable=true
+     audio.offload.pcm.24bit.enable=true \
+     persist.vendor.audio.fluence.voicecall=true \
+     ro.vendor.audio.sdk.fluencetype=fluence \
+     vendor.audio_hal.period_size=192 \
+     vendor.audio.offload.buffer.size.kb=32 \
+     vendor.audio.offload.gapless.enabled=true \
+     vendor.audio.offload.multiple.enabled=false \
+     vendor.audio.tunnel.encode=true \
+     vendor.dedicated.device.for.voip=true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
