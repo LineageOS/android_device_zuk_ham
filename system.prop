@@ -12,7 +12,7 @@ persist.radio.custom_ecc=1
 persist.radio.multisim.config=dsds
 
 # bluetooth
-qcom.bluetooth.soc=smd
+vendor.qcom.bluetooth.soc=smd
 ro.bluetooth.hfp.ver=1.7
 ro.qualcomm.bt.hci_transport=smd
 ro.bluetooth.dun=false
