@@ -132,8 +132,9 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
 
-# Exclude serif fonts for saving system.img size.
+# Fonts
 EXCLUDE_SERIF_FONTS 	:= true
+SMALLER_FONT_FOOTPRINT  := true
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
