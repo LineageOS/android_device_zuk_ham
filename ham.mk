@@ -257,7 +257,8 @@ PRODUCT_PACKAGES += \
 
 # Enable Bluetooth HFP
 PRODUCT_PROPERTY_OVERRIDES += \
-    bluetooth.hfp.client=1
+    bluetooth.hfp.client=1 \
+    ro.boot.btmacaddr=00:00:00:00:00:00
 
 # Enable Quick Charge 2.0
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
