@@ -110,6 +110,9 @@ PRODUCT_PACKAGES += \
     camera.msm8974 \
     Snap
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/external_camera_config.xml:system/vendor/etc/external_camera_config.xml
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
