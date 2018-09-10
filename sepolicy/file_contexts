@@ -1,9 +1,6 @@
 # Camera
 /data/cam_socket.*                                 u:object_r:camera_socket:s0
 
-# Vibrator
-/sys/devices/virtual/timed_output/vibrator/vtg_level   u:object_r:vibeamp_sysfs:s0
-
 # Sensors
 /persist/sns.reg                                u:object_r:sensors_persist_file:s0
 
