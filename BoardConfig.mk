@@ -98,9 +98,7 @@ TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # Lineage Hardware
-BOARD_HARDWARE_CLASS := \
-    hardware/lineage/lineagehw \
-    $(DEVICE_PATH)/lineagehw
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
 # Tap to wake
 TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/touch/tp_dev/gesture_on
