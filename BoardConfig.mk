@@ -87,11 +87,10 @@ TARGET_USE_COMPAT_GRALLOC_ALIGN := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CM Hardware
-BOARD_USES_CYANOGEN_HARDWARE := true
+# Lineage Hardware
 BOARD_HARDWARE_CLASS := \
-    hardware/cyanogen/cmhw \
-    $(DEVICE_PATH)/cmhw
+    hardware/lineage/lineagehw \
+    $(DEVICE_PATH)/lineagehw
 
 # Tap to wake
 TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/touch/tp_dev/gesture_on
