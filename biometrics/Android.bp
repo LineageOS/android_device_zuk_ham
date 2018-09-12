@@ -27,5 +27,12 @@ cc_binary {
         "libhwbinder",
         "android.hardware.biometrics.fingerprint@2.1",
     ],
+    arch: {
+        arm: {
+            cflags: [
+                "-DARCH_ARM_32"
+            ],
+        },
+    },
     proprietary: true,
 }
