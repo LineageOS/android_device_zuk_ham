@@ -1,3 +1,2 @@
 allow hal_power_default touchpanel_sysfs:dir search;
-allow hal_power_default touchpanel_sysfs:file open;
-allow hal_power_default touchpanel_sysfs:file write;
+allow hal_power_default touchpanel_sysfs:file rw_file_perms;
