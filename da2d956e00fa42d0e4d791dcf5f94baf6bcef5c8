@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "559ff508_6ab3fde7",
+        "filename": "sepolicy/hal_light_default.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 6753
+      },
+      "writtenOn": "2018-09-16T14:30:50Z",
+      "side": 1,
+      "message": "This shouldn\u0027t be needed now that the paths are labeled. lights hal should already have perms to access sysfs_leds",
+      "revId": "da2d956e00fa42d0e4d791dcf5f94baf6bcef5c8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
