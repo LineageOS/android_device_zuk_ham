@@ -259,7 +259,7 @@ on fs
     mkdir /persist/data/sfs 0700 system system
     mkdir /persist/data/tz 0700 system system
 
-    mount ext4 /dev/block/bootdevice/by-name/mrd /oem ro nosuid nodev context=u:object_r:oemfs:s0
+    mount ext4 /dev/block/bootdevice/by-name/mrd /oem ro nosuid nodev
 
 service rmt_storage /system/vendor/bin/rmt_storage
     class core
