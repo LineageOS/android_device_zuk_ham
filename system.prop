@@ -2,45 +2,8 @@
 # system.prop for ham
 #
 
-ro.sf.lcd_density=480
-rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
-persist.radio.add_power_save=1
-persist.radio.apm_sim_not_pwdn=1
-persist.radio.custom_ecc=1
-
-# enable multisim
+# RIL & Data
 persist.radio.multisim.config=dsds
-
-# bluetooth
-qcom.bluetooth.soc=smd
-ro.bluetooth.hfp.ver=1.7
-ro.qualcomm.bt.hci_transport=smd
-ro.bluetooth.dun=false
-ro.bluetooth.sap=false
-ro.qualcomm.bluetooth.ftp=true
-ro.qualcomm.bluetooth.hfp=true
-ro.qualcomm.bluetooth.hsp=true
-ro.qualcomm.bluetooth.map=true
-ro.qualcomm.bluetooth.nap=true
-ro.qualcomm.bluetooth.opp=true
-ro.qualcomm.bluetooth.pbap=true
-
-# sensors
-ro.qc.sdk.camera.facialproc=true
-ro.qc.sdk.gestures.camera=false
-ro.qti.sdk.sensors.gestures=true
-ro.qti.sensors.bte=true
-ro.qti.sensors.gtap=true
-ro.qti.sensors.vmd=true
-ro.qti.sensors.pick_up=false
-ro.qti.sensors.tilt_detector=true
-ro.qti.sensors.scrn_ortn=true
-
-# cabl is handled by the panel
-ro.qualcomm.cabl=0
-
-# handle tear down on em redial
-ro.ril.em_redial_vt_failover=true
 
 # Factory reset protection
 ro.frp.pst=/dev/block/bootdevice/by-name/frp

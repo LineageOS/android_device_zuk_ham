@@ -1,5 +1,9 @@
 [
   {
+    "repository":  "android_device_lenovo_msm8974-common",
+    "target_path": "device/lenovo/msm8974-common"
+  },
+  {
     "repository": "android_kernel_cyanogen_msm8974",
     "target_path": "kernel/cyanogen/msm8974"
   },
