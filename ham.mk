@@ -342,7 +342,7 @@ PRODUCT_COPY_FILES += \
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
-    textclassifier.smartselection.bundle1
+    textclassifier.bundle1
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
