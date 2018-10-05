@@ -1,0 +1,1 @@
+allow mm-qcamerad snap_app:fd {use};
