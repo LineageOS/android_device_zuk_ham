@@ -25,10 +25,6 @@ on early-init
     chown system system /sys/kernel/debug/kgsl/proc
 
 on init
-    # Set permissions for persist partition
-    mkdir /persist 0771 system system
-    mkdir /oem 0550 root root
-
     start program_bdaddr
 
 on early-boot
