@@ -1,0 +1,1 @@
+genfscon sysfs /devices/mdp.0  u:object_r:sysfs_graphics:s0
