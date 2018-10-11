@@ -213,6 +213,16 @@ endif
 # Extended filesystem support
 TARGET_EXFAT_DRIVER := sdfat
 
+# TWRP
+ifeq ($(WITH_TWRP),true)
+TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)/twrp
+TW_INCLUDE_CRYPTO := true
+TW_THEME := portrait_hdpi
+TW_USE_TOOLBOX := true
+TW_EXCLUDE_SUPERSU := true
+TW_EXCLUDE_TWRPAPP := true
+endif
+
 # SELinux policies
 # qcom sepolicy
 include device/qcom/sepolicy-legacy/sepolicy.mk
