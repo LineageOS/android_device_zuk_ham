@@ -1,0 +1,2 @@
+allow bluetooth_loader btnvtool_exec:file { execute_no_trans };
+allow bluetooth_loader awktool_exec:file { read open getattr execute execute_no_trans };

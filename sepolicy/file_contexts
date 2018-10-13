@@ -14,6 +14,10 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service\.ham		u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.ham                               u:object_r:hal_light_default_exec:s0
 
+# Bluetooth
+/(vendor|system/vendor)/bin/init\.program_bdaddr\.sh               u:object_r:bluetooth_loader_exec:s0
+/(vendor|system/vendor)/bin/awk                                    u:object_r:awktool_exec:s0
+
 # Lights
 /sys/devices/mdp\.0/qcom,mdss_fb_primary\.169/leds/lcd-backlight(/.*)?   u:object_r:sysfs_leds:s0
 /sys/devices/leds-qpnp-shenqi-k9-24/leds/led:rgb_red(/.*)?               u:object_r:sysfs_leds:s0
