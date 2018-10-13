@@ -1,6 +1,8 @@
 allow hal_fingerprint_default data_qsee_file:dir { add_name remove_name search write };
 allow hal_fingerprint_default data_qsee_file:file { rename unlink };
 allow hal_fingerprint_default fingerprint_device:chr_file { open read };
+allow hal_fingerprint_default fingerprintd_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default fingerprintd_data_file:file create_file_perms;
 allow hal_fingerprint_default fingerprint_sysfs:dir search;
 allow hal_fingerprint_default fingerprint_sysfs:file rw_file_perms;
 allow hal_fingerprint_default firmware_file:file r_file_perms;
