@@ -370,6 +370,7 @@ service hciattach /system/vendor/bin/init.qcom.bt.sh
     user bluetooth
     group bluetooth net_bt_admin oem_2950 radio
     disabled
+    seclabel u:r:bluetooth_loader:s0
     oneshot
 
 on property:vendor.bluetooth.hciattach=true
@@ -419,5 +420,6 @@ service fuse_usbdisk /system/vendor/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/m
 service program_bdaddr /system/vendor/bin/init.program_bdaddr.sh
     user bluetooth
     group bluetooth
+    seclabel u:r:bluetooth_loader:s0
     disabled
     oneshot
