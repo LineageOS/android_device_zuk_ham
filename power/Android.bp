@@ -1,0 +1,29 @@
+cc_binary {
+    proprietary: true,
+    defaults: ["hidl_defaults"],
+    relative_install_path: "hw",
+    name: "android.hardware.power@1.0-service.ham",
+    init_rc: ["android.hardware.power@1.0-service.ham.rc"],
+    srcs: [
+        "service.cpp",
+        "Power.cpp",
+        "power.c",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libdl",
+        "libutils",
+        "libcutils",
+        "libhardware",
+        "libhidlbase",
+        "libhidltransport",
+        "android.hardware.power@1.0",
+        "vendor.lineage.power@1.0",
+    ],
+}

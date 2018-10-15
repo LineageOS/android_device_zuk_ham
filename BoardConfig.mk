@@ -95,9 +95,6 @@ BOARD_HARDWARE_CLASS := \
     hardware/lineage/lineagehw \
     $(DEVICE_PATH)/lineagehw
 
-# Tap to wake
-TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/touch/tp_dev/gesture_on
-
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 20971520
 BOARD_CACHEIMAGE_PARTITION_SIZE    := 134217728
@@ -164,11 +161,6 @@ USE_DEVICE_SPECIFIC_LOC_API := true
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
-
-# Power
-TARGET_HAS_LEGACY_POWER_STATS := true
-TARGET_HAS_NO_WIFI_STATS := true
-TARGET_USES_INTERACTION_BOOST := true
 
 # QCRIL
 TARGET_RIL_VARIANT := caf

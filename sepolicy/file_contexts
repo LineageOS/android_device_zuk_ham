@@ -13,6 +13,7 @@
 # HALS
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service\.ham		u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.ham                               u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service\.ham                               u:object_r:hal_power_default_exec:s0
 
 # Lights
 /sys/devices/mdp\.0/qcom,mdss_fb_primary\.169/leds/lcd-backlight(/.*)?   u:object_r:sysfs_leds:s0

@@ -1,2 +1,6 @@
 allow hal_power_default touchpanel_sysfs:dir search;
 allow hal_power_default touchpanel_sysfs:file rw_file_perms;
+
+allow hal_power_default sysfs:file rw_file_perms;
+allow hal_power_default property_socket:sock_file write;
+allow hal_power_default init:unix_stream_socket connectto;

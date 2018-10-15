@@ -185,7 +185,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service-qti
+    android.hardware.power@1.0-service.ham
 
 # Recovery
 PRODUCT_PACKAGES += \
