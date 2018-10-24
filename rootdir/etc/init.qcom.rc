@@ -25,6 +25,9 @@ on early-init
     chown system system /sys/kernel/debug/kgsl/proc
 
 on init
+    # Mount and bind audio_policy_configuration.xml in /vendor
+    mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio/audio_policy_configuration.xml bind
+ 
     # Set permissions for persist partition
     mkdir /persist 0771 system system
     mkdir /oem 0550 root root
