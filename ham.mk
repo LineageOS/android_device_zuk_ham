@@ -261,10 +261,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1
 
-# Enable Quick Charge 2.0
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.usb.hvdcp.detect=true
-
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
 

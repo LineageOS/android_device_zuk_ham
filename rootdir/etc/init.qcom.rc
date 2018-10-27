@@ -329,13 +329,7 @@ service charger /charger -c
 service hvdcp /system/vendor/bin/hvdcp
     class core
     user root
-    disabled
-
-on property:persist.usb.hvdcp.detect=true
-    start hvdcp
-
-on property:persist.usb.hvdcp.detect=false
-    stop hvdcp
+    group root
 
 service qbcharger /charger -m 1
     disabled
