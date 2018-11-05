@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5e1ea1af_8dafb0c8",
+        "filename": "libaudioamp/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-11-05T19:46:00Z",
+      "side": 1,
+      "message": "You can also remove this and add:\n\nLOCAL_HEADER_LIBRARIES +\u003d libhardware_headers",
+      "range": {
+        "startLine": 7,
+        "startChar": 3,
+        "endLine": 7,
+        "endChar": 31
+      },
+      "revId": "046cfea866835da70deeb53256d992daafec5be1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
