@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "34e7dedf_0e1fafbd",
+        "filename": "libaudioamp/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-11-06T11:35:32Z",
+      "side": 1,
+      "message": "Since this is unrelated to generated kernel headers, please do it in a separate change. I did it here: https://github.com/LineageOS/android_device_htc_msm8974-common/commit/2149bfbc7ee6b8b5b56f45def90b6074ccb4e9d3",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 45
+      },
+      "revId": "7ecad7ad10089bcad93037ac5d32a7f6efa22a53",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
