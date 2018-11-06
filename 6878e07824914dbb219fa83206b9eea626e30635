@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fcabd103_9c9c35c2",
+        "filename": "libaudioamp/Android.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-11-06T16:43:43Z",
+      "side": 1,
+      "message": ":\u003d",
+      "range": {
+        "startLine": 8,
+        "startChar": 23,
+        "endLine": 8,
+        "endChar": 25
+      },
+      "revId": "6878e07824914dbb219fa83206b9eea626e30635",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
