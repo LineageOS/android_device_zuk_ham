@@ -55,3 +55,6 @@
 
 #net
 /sys/devices/virtual/net(/.*)?                          u:object_r:sysfs_net:s0
+
+# sysfs - block/storage
+/sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/mmc[0-9]:[0-9]+/block/mmcblk[0-9]/queue/iosched/slice_idle   u:object_r:sysfs_io_sched_tuneable:s0
