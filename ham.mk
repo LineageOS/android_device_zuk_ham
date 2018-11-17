@@ -284,6 +284,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.tcpackprio.enable=true \
     ro.data.large_tcp_window_size=true \
     telephony.lteOnCdmaDevice=1 \
+    wifi.direct.interface=p2p0 \
     wifi.interface=wlan0 \
     ro.qualcomm.perf.cores_online=2 \
     ro.vendor.extension_library=libqti-perfd-client.so \
