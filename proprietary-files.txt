@@ -119,7 +119,6 @@ lib/hw/fingerprint.msm8974.so:vendor/lib/hw/fingerprint.msm8974.so
 lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so
 
 # GPS
-bin/loc_launcher:vendor/bin/loc_launcher
 lib/libloc_ds_api.so:vendor/lib/libloc_api_v02.so
 lib/libloc_api_v02.so:vendor/lib/libloc_ds_api.so|76f0f1224b2afc37215fb8732fc4835f72dc3cbb
 vendor/lib/hw/flp.default.so
@@ -147,7 +146,6 @@ vendor/lib/librs_adreno.so|483b327e1a7fde0a898019d5958e43097fd87f98
 vendor/lib/librs_adreno_sha1.so|e254ee7df74b1f0ecd73fc6b02e5bd5367a83de6
 vendor/lib/libsc-a3xx.so|231201bcfead5f930537d2fba22d89b00e673386
 vendor/lib/libscale.so|b44f44c633fa404d10e76aaa23593b516e08e2b8
-vendor/lib/libuiblur.so
 
 # Graphics firmware
 etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
@@ -209,7 +207,6 @@ etc/permissions/qcnvitems.xml:vendor/etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml:vendor/etc/permissions/qcrilhook.xml
 framework/qcnvitems.jar:vendor/framework/qcnvitems.jar
 framework/qcrilhook.jar:vendor/framework/qcrilhook.jar
-framework/ConnectivityExt.jar:vendor/framework/ConnectivityExt.jar
 lib/libmdmdetect.so:vendor/lib/libmdmdetect.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
