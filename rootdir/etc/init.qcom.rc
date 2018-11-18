@@ -316,11 +316,6 @@ service wpa_supplicant /system/vendor/bin/hw/wpa_supplicant \
     disabled
     oneshot
 
-service loc_launcher /system/vendor/bin/loc_launcher
-    # loc_launcher will start as root and set its uid to gps
-    class late_start
-    group gps inet net_raw oem_2950 net_admin wifi
-
 service qseecomd /system/vendor/bin/qseecomd
     class core
     user root
