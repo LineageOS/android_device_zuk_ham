@@ -1,2 +1,18 @@
-allow init sysfs_usb_storage_gadget:file setattr;
-allow init sysfs_msm_perf:file w_file_perms;
+allow init {
+    sysfs_batteryinfo
+    sysfs_kgsl
+    sysfs_usb_storage_gadget
+}:file setattr;
+
+allow init {
+    sysfs_cpu_boost
+    sysfs_cpubw
+    sysfs_devices_system_cpu
+    sysfs_kgsl
+    sysfs_lowmemorykiller
+    sysfs_msm_perf
+    sysfs_msm_power
+    sysfs_thermal
+}:file w_file_perms;
+
+allow init sysfs_kgsl:lnk_file read;
