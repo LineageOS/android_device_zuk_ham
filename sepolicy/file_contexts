@@ -52,3 +52,6 @@
 
 # sysfs - usb
 /sys/devices/msm_dwc3/[a-f0-9]+\.dwc3/gadget/lun[0-9]+(/.*)?       u:object_r:sysfs_usb_storage_gadget:s0
+
+#net
+/sys/devices/virtual/net(/.*)?                          u:object_r:sysfs_net:s0
