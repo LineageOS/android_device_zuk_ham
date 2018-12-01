@@ -44,3 +44,5 @@
 /sys/devices/qpnp-bms-10/power_supply(/.*)?                        u:object_r:sysfs_batteryinfo:s0
 /sys/devices/qpnp-charger-14/power_supply(/.*)?                    u:object_r:sysfs_batteryinfo:s0
 
+#net
+/sys/devices/virtual/net(/.*)?                          u:object_r:sysfs_net:s0
