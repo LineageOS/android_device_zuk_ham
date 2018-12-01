@@ -1,0 +1,5 @@
+allow vold {
+    block_device
+    cache_block_device
+    system_block_device
+}:blk_file getattr;
