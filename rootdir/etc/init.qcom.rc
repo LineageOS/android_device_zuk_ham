@@ -154,12 +154,6 @@ on post-fs-data
     # Camera sockets
     mkdir /data/misc/camera 0770 camera camera
 
-    # Custom ECC
-    mkdir /data/misc/radio 0700 radio radio
-    copy /vendor/etc/qcril_cm.db /data/misc/radio/qcril.db
-    chown radio radio /data/misc/radio/qcril.db
-    chmod 700 /data/misc/radio/qcril.db
-
 on fs
     wait /dev/block/platform/${ro.boot.bootdevice}
     symlink /dev/block/platform/${ro.boot.bootdevice} /dev/block/bootdevice
