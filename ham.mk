@@ -38,10 +38,6 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.program_bdaddr.sh
 
-# Emergenry number list
-PRODUCT_PACKAGES += \
-    qcril_cm.db
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdb/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
