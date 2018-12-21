@@ -261,6 +261,10 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
+on property:sys.boot_completed=1
+    stop cameraserver
+    start cameraserver
+
 service mpdecision /vendor/bin/mpdecision --avg_comp
     class main
     user root
