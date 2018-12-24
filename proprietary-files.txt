@@ -257,7 +257,7 @@ etc/firmware/venus.mbn:vendor/firmware/venus.mbn
 etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
 # Widevine - from angler's OPR6.170623.017 factory image
-vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
 
 # WiFi
 lib/libwcnss_qmi.so:vendor/lib/libwcnss_qmi.so
