@@ -56,6 +56,7 @@ BOARD_DTBTOOL_ARGS := -2
 TARGET_KERNEL_ARCH := arm
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_CMDLINE := console=tty60,115200,n8 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3b7 ehci-hcd.park=3 androidboot.bootdevice=msm_sdcc.1 vmalloc=480M
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8974
 TARGET_KERNEL_CONFIG := lineageos_k9_defconfig
 
@@ -197,12 +198,15 @@ TARGET_EXFAT_DRIVER := sdfat
 # TWRP
 ifeq ($(WITH_TWRP),true)
 TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)/twrp
+TW_CRYPTO_USE_SBIN_VOLD := true
 TW_INCLUDE_CRYPTO := true
 TW_THEME := portrait_hdpi
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXCLUDE_TWRPAPP := true
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
 endif
 
 # SELinux policies
