@@ -1,2 +1,0 @@
-allow system_app touchpanel_sysfs:dir search;
-allow system_app touchpanel_sysfs:file rw_file_perms;
