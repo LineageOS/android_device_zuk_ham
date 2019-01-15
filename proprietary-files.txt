@@ -191,7 +191,7 @@ vendor/lib/libsmemlog.so
 vendor/lib/libsystem_health_mon.so
 
 # Radio
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|61ddb707d25a574a19315eb573e3cda5416b342e
 -app/shutdownlistener/shutdownlistener.apk:vendor/app/shutdownlistener/shutdownlistener.apk
 bin/netmgrd:vendor/bin/netmgrd
 bin/qmuxd:vendor/bin/qmuxd
