@@ -13,6 +13,7 @@
 # HALS
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service\.ham		u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.ham                               u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.ham                u:object_r:hal_lineage_touch_default_exec:s0
 
 # Bluetooth
 /(vendor|system/vendor)/bin/init\.program_bdaddr\.sh               u:object_r:bluetooth_loader_exec:s0
