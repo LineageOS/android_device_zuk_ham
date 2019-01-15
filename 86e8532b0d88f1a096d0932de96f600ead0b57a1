@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "67b652e6_104471fd",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-15T11:14:46Z",
+      "side": 1,
+      "message": "Does this apply to you as well? You might want to replace \"HTC MSM8974-based\" wording.",
+      "range": {
+        "startLine": 17,
+        "startChar": 36,
+        "endLine": 19,
+        "endChar": 38
+      },
+      "revId": "86e8532b0d88f1a096d0932de96f600ead0b57a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
