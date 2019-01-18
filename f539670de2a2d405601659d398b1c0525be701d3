@@ -22,6 +22,24 @@
       "revId": "f539670de2a2d405601659d398b1c0525be701d3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e510f7be_b2d11805",
+        "filename": "touch/service.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 18220
+      },
+      "writtenOn": "2019-01-18T16:52:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "641d0ef9_70a66dfb",
+      "revId": "f539670de2a2d405601659d398b1c0525be701d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
