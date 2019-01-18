@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "641d0ef9_70a66dfb",
+        "filename": "touch/service.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2019-01-18T14:14:03Z",
+      "side": 1,
+      "message": "Should be 1 since you register only 1 iface",
+      "range": {
+        "startLine": 46,
+        "startChar": 27,
+        "endLine": 46,
+        "endChar": 28
+      },
+      "revId": "f539670de2a2d405601659d398b1c0525be701d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
