@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aa97ab0a_52621541",
+        "filename": "touch/KeyDisabler.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2019-01-23T18:36:25Z",
+      "side": 1,
+      "message": "As per Luca\u0027s recommendation this should be \"implementation\".",
+      "range": {
+        "startLine": 27,
+        "startChar": 10,
+        "endLine": 27,
+        "endChar": 13
+      },
+      "revId": "9fd84c7951aafbb8c077a785cebfe213723cfc4e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
