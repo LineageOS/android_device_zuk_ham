@@ -128,8 +128,7 @@ on post-fs-data
     restorecon_recursive /data/misc/sensors
 
     # Create the directories used by the fingerprint implementation
-    mkdir /persist/fingerprintapp 0770 system system
-    restorecon_recursive /persist/fingerprintapp
+    mkdir /persist/fingerprintapp 0775 system system
 
     # Create the directories used by the Wireless subsystem
     mkdir /data/vendor/wifi 0770 wifi wifi
