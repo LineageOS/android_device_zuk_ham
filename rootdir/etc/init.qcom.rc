@@ -323,7 +323,7 @@ on property:init.svc.surfaceflinger=running
 service ril-daemon1 /vendor/bin/hw/rild -c 2
     class main
     user radio
-    group radio cache inet misc audio log readproc wakelock sdcard_r sdcard_rw diag
+    group radio cache inet misc audio log readproc wakelock
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service fuse_sdcard1 /vendor/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/sdcard1 /storage/sdcard1
