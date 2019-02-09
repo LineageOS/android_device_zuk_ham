@@ -308,8 +308,7 @@ service wcnss-service /vendor/bin/wcnss_service
     oneshot
 
 service ppd /vendor/bin/mm-pp-daemon
-    class late_start
-    disabled
+    class hal
     user system
     socket pps stream 0660 system system
     group system graphics
