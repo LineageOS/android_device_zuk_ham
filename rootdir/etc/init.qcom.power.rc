@@ -99,4 +99,5 @@ on property:init.svc.recovery=running
 on property:dev.bootcomplete=1
     rm /data/system/perfd/default_values
     setprop sys.io.scheduler "bfq"
+    setprop vendor.post_boot.parsed 1
     start mpdecision
