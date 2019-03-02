@@ -97,7 +97,7 @@
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
-    <integer name="config_safe_media_volume_index">9</integer>
+    <integer name="config_safe_media_volume_index">15</integer>
 
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
