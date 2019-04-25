@@ -13,5 +13,4 @@ LOCAL_C_INCLUDES := \
     bootable/recovery/updater/include
 LOCAL_SRC_FILES := recovery_updater.cpp
 LOCAL_MODULE := librecovery_updater_ham
-LOCAL_MODULE_TAGS := eng
 include $(BUILD_STATIC_LIBRARY)
