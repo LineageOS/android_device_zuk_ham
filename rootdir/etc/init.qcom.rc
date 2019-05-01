@@ -231,8 +231,9 @@ service qseecomd /vendor/bin/qseecomd
     user root
     group root
 
-service charger /charger -c
+service charger /system/bin//charger
     class charger
+    group system graphics
     critical
     seclabel u:r:charger:s0
 
