@@ -172,7 +172,7 @@ on fs
 
     restorecon_recursive /persist
 
-    mount ext4 /dev/block/bootdevice/by-name/mrd /oem ro nosuid nodev context=u:object_r:oemfs:s0
+    mount ext4 /dev/block/bootdevice/by-name/mrd /oem ro nosuid nodev
 
 service rmt_storage /vendor/bin/rmt_storage
     class core
