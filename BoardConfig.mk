@@ -22,6 +22,7 @@ BOARD_VENDOR := zuk
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := ham,Z1
 
 #Include path
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
