@@ -226,14 +226,14 @@ vendor/lib/libsensor_reg.so
 vendor/lib/libstlport.so
 
 # TFA9890
-etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config
-etc/tfa98xx/TFA9890_N1C3_2_1_1.patch
-etc/tfa98xx/coldboot.patch
-etc/tfa98xx/shenqi.speaker
-etc/tfa98xx/shenqi_music.eq
-etc/tfa98xx/shenqi_music.preset
-etc/tfa98xx/shenqi_speech.eq
-etc/tfa98xx/shenqi_speech.preset
+etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config:vendor/ampl/TFA9890_N1B12_N1C3_v2.config
+etc/tfa98xx/TFA9890_N1C3_2_1_1.patch:vendor/ampl/TFA9890_N1C3_2_1_1.patch
+etc/tfa98xx/coldboot.patch:vendor/ampl/coldboot.patch
+etc/tfa98xx/shenqi.speaker:vendor/ampl/shenqi.speaker
+etc/tfa98xx/shenqi_music.eq:vendor/ampl/shenqi_music.eq
+etc/tfa98xx/shenqi_music.preset:vendor/ampl/shenqi_music.preset
+etc/tfa98xx/shenqi_speech.eq:vendor/ampl/shenqi_speech.eq
+etc/tfa98xx/shenqi_speech.preset:vendor/ampl/shenqi_speech.eq
 vendor/lib/libtfa98xx.so
 
 # Thermal
