@@ -234,7 +234,7 @@ etc/tfa98xx/shenqi_music.eq:vendor/ampl/shenqi_music.eq
 etc/tfa98xx/shenqi_music.preset:vendor/ampl/shenqi_music.preset
 etc/tfa98xx/shenqi_speech.eq:vendor/ampl/shenqi_speech.eq
 etc/tfa98xx/shenqi_speech.preset:vendor/ampl/shenqi_speech.eq
-vendor/lib/libtfa98xx.so
+vendor/lib/libtfa98xx.so|f41bee9f243ab36a985f9f9251288e545902dee0
 
 # Thermal
 vendor/bin/thermal-engine|e6160e4f2c423f045ba8601114e6943f8e6e7a0e
