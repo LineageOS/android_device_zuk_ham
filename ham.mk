@@ -262,8 +262,6 @@ PRODUCT_PACKAGES += \
 
 # Misc dependencies
 PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
     curl \
     libnl_2 \
     libbson \
