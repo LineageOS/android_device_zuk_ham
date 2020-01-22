@@ -2,9 +2,5 @@
   {
     "repository": "android_kernel_cyanogen_msm8974",
     "target_path": "kernel/cyanogen/msm8974"
-  },
-  {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
   }
 ]
