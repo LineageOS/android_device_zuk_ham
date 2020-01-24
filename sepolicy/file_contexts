@@ -47,3 +47,7 @@
 
 #net
 /sys/devices/virtual/net(/.*)?                          u:object_r:sysfs_net:s0
+
+# cgroup
+/dev/cpuset(/.*)?    u:object_r:cgroup:s0
+/dev/stune(/.*)?     u:object_r:cgroup:s0
